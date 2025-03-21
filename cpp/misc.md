@@ -36,4 +36,23 @@ x≤sqrt(y) → x*x≤y or x≤y/x
 sqrt(x*x+y*y+z*z) → hypot(x,hypot(y,z))
 ```
 
-`````
+### enum
+
+```
+enum Days {Saturday, Sunday, Tuesday, Wednesday, Thursday, Friday};
+Days day = Saturday;
+if (day == Saturday)
+```
+
+```
+enum class Days {
+    SUNDAY,
+    MONDAY,
+    // ... etc.
+}
+
+// ...
+
+if (day == Days::SUNDAY)
+```
+
