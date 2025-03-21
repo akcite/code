@@ -21,6 +21,9 @@ std::cout << str[0];
 
 std::string str ("Test string");
 std::cout << str.at(0);
+
+// char& front();
+// char& back();
 ```
 
 ### substr
