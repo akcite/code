@@ -33,8 +33,8 @@ mymap.emplace('z',100);
 ```
 std::map<char,int> mymap;
 
-mymap.insert ( std::pair<char,int>('a',100) );
-mymap.insert ( std::pair<char,int>('z',200) );
+mymap.insert(std::pair<char,int>('a',100));
+mymap.insert(std::pair<char,int>('z',200));
 ```
 
 ```
