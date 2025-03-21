@@ -2,7 +2,7 @@
 
 | Operator | Notes |
 | -------- | ---------------------------------------------- |
-| []	| Capture nothing (or, a scorched earth strategy?) |
+| [ ]	| Capture nothing (or, a scorched earth strategy?) |
 | [&]	| Capture any referenced variable by reference |
 | [=]	| Capture any referenced variable by making a copy |
 
