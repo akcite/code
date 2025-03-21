@@ -6,6 +6,8 @@ for (const auto& kv : myMap) {
 }
 ```
 
+### Iterator
+
 ```
 std::map<char,int> mymap;
 
