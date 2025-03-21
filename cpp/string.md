@@ -9,8 +9,19 @@ float std::stof(string)
 double std::stod(string)
 ```
 
-### char& operator[] (size_t pos)
+### get character
 
+```
+// char& operator[] (size_t pos)
+
+std::string str ("Test string");
+std::cout << str[0];
+
+// char& at (size_t pos);
+
+std::string str ("Test string");
+std::cout << str.at(0);
+```
 
 ### substr
 
