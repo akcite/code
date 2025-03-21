@@ -1,18 +1,25 @@
+
+### Quick
+
+```
+range(0,5): 0, 1, 2, 3, 4
+vec[r, c] = input[r][c] # np.array[,] = list[][]
+
 Ctrl-D or exit()
+```
 
+### Chapter 1: Getting Started
 
-Chapter 1: Getting Started
-
-
+```
 print("Hello Python interpreter!")
 print("Hello world!")
 x-terminal-emulator -e /bin/sh %c
 # Try removing the quote marks
+```
 
+### Chapter 2: Variables and Simple Data Types
 
-Chapter 2: Variables and Simple Data Types
-
-
+```
 message = "Hello Python Crash Course world!"
 print(message)
 name = "ada lovelace"
@@ -27,58 +34,16 @@ favorite_language = 'python '
 favorite_language.rstrip()
 favorite_language.lstrip()
 favorite_language.strip()
-3 / 2
-210
-11
-10
-9
-8
-7
-6
-5
-4
-3
-2
-1
-1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-Document tabs
-python_pcc
-Quick
-Ctrl-D or exit()
-Chapter 1: Getting Started
-Chapter 2: Variables and Simple Data Types
-Chapter 3: Introducing Lists
-Chapter 4: Working with Lists
-Chapter 5: if Statements
-Chapter 6: Dictionaries
-Chapter 7: User Input and while Loops
-Chapter 8: Functions
-Chapter 9: Classes
-Chapter 10: Files and Exceptions
-Chapter 11: Testing Your Code
-Snippet
-()[]{}
-
-
 
 3 ** 2
 age = 23
 message = "Happy " + str(age) + "rd Birthday!"
 # Say hello to everyone.
+```
 
+### Chapter 3: Introducing Lists
 
-Chapter 3: Introducing Lists
-
-
+```
 bicycles = ['trek', 'cannondale', 'redline', 'specialized']
 print(bicycles[0].title())
 bicycles = ['trek', 'cannondale', 'redline', 'specialized']
@@ -116,11 +81,11 @@ cars = ['bmw', 'audi', 'toyota', 'subaru']
 cars.reverse()
 
 len(cars)
+```
 
+### Chapter 4: Working with Lists
 
-Chapter 4: Working with Lists
-
-
+```
 magicians = ['alice', 'david', 'carolina']
 for magician in magicians:
   print(magician)
@@ -186,11 +151,11 @@ for dimension in dimensions:
 dimensions = (200, 50)
 dimensions = (400, 100)
 # Writing over a Tuple
+```
 
+### Chapter 5: if Statements
 
-Chapter 5: if Statements
-
-
+```
 cars = ['audi', 'bmw', 'subaru', 'toyota']
 for car in cars:
   if car == 'bmw':
@@ -237,11 +202,11 @@ if 'mushrooms' in requested_toppings:
 requested_toppings = ['mushrooms', 'green peppers', 'extra cheese']
 for requested_topping in requested_toppings:
   print("Adding " + requested_topping + ".")
+```
 
+### Chapter 6: Dictionaries
 
-Chapter 6: Dictionaries
-
-
+```
 alien_0 = {'color': 'green', 'points': 5}
 print(alien_0['color'])
 print(alien_0['points'])
@@ -317,11 +282,11 @@ users = {
     'location': 'paris',
   },
 }
+```
 
+### Chapter 7: User Input and while Loops
 
-Chapter 7: User Input and while Loops
-
-
+```
 message = input("I will repeat it back to you: ")
 print(message)
 
@@ -374,11 +339,11 @@ while polling_active:
 print("\n--- Poll Results ---")
 for name, response in responses.items():
   print(name + " would like to climb " + response + ".")
+```
 
+### Chapter 8: Functions
 
-Chapter 8: Functions
-
-
+```
 def greet_user(username):
   """Display a simple greeting."""
   print("Hello, " + username.title() + "!")
@@ -444,9 +409,11 @@ import pizza as p
 p.make_pizza(12, 'mushrooms', 'green peppers', 'extra cheese')
 
 from pizza import *
+```
 
+### Chapter 9: Classes
 
-Chapter 9: Classes
+```
 class Dog():
     """A simple attempt to model a dog."""
     
@@ -523,11 +490,11 @@ from collections import OrderedDict
 favorite_languages = OrderedDict()
 
 # always get responses back in the order they were added
+```
 
+### Chapter 10: Files and Exceptions
 
-Chapter 10: Files and Exceptions
-
-
+```
 file
 
 4 3
@@ -550,7 +517,6 @@ with open('file') as f:
 print(w, h)
 print(array)
 print(array[1][2])
-
 
 (4, 3)
 [[1, 2, 3, 4], [2, 3, 4, 5], [6, 7, 8, 9]]
@@ -670,11 +636,11 @@ print(f.readline())    # vs. readlines
 print(f.readline())
 
 f.close()
+```
 
+### Chapter 11: Testing Your Code
 
-Chapter 11: Testing Your Code
-
-
+```
 import unittest
 from name_function import get_formatted_name
 
@@ -726,9 +692,6 @@ class TestAnonymousSurvey(unittest.TestCase):
 
 unittest.main()
 
-
-
-
 Snippet
 
 new_lines = []
@@ -737,25 +700,11 @@ import math
 math.sqrt(4)
 import os
 filename, file_extension = os.path.splitext('/path/somefile.ext')
+```
 
+### ()[]{}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-()[]{}
-
+```
 >>> int()
 0
 
@@ -785,8 +734,5 @@ array([0, 1, 2, 3])
 Parentheses are smooth and curved ().
 Brackets are square [].
 Braces are curly {}.
-
-
-
-
+```
 
