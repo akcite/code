@@ -18,8 +18,9 @@ std::cout << std::to_string(now_nanosec.count()) << std::endl;
 1626375435423895344
 ```
 
+### Duration
 
-
+```
 #include <iostream>
 #include <chrono>
 
@@ -45,9 +46,11 @@ g++ -std=c++11 chrono.cpp
 
 for took 22.2169 ms
 for took 22216.9 us
+```
 
+### Date, HH:MM:SS
 
-
+```
 #include <iostream>
 #include <ctime>
 
@@ -65,51 +68,11 @@ int main() {
 
 =====
 Thu, 01.07.2021 15:24:03
+```
 
+### ctime
 
-#include <iostream>
-#include <chrono>
-#include <opencv2/opencv.hpp>
-
-using namespace std;
-using namespace cv;
-
-int main() {
-    Mat im0 = imread("9bn.jpg", IMREAD_GRAYSCALE), ds0;
-    
-    auto t1 = std::chrono::high_resolution_clock::now();
-
-    vector<cv::KeyPoint> kp0;
-    //~ for (int i = 0; i < 1000; ++i) {
-    Ptr<GFTTDetector> detector = GFTTDetector::create(60, 0.01, 10);
-    detector->detect(im0, kp0);
-
-    auto t2 = std::chrono::high_resolution_clock::now();
-
-    Ptr<ORB> extractor = ORB::create();
-    extractor->compute(im0, kp0, ds0);
-    //~ }
-    cout << kp0.size() << endl;
-
-    auto t3 = std::chrono::high_resolution_clock::now();
-    
-    std::chrono::duration<double, std::milli> fp_ms = t2 - t1;
-    std::chrono::duration<double, std::milli> fp_us = t3 - t2;
-    
-    std::cout << "for took " << fp_ms.count() << " ms" << std::endl;
-    std::cout << "for took " << fp_us.count() << " ms" << std::endl;
-}
-
-/*
-g++ --std=c++11 -I/usr/local/include -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"test_time.d" -MT"test_time.o" -o "test_time.o" "./test_time.cpp"
-g++ -L/usr/local/lib -o "opencv"  ./test_time.o   -lopencv_core -lopencv_highgui -lopencv_features2d -lopencv_flann -lopencv_imgproc -lopencv_calib3d -lopencv_imgcodecs -lopencv_videoio -lopencv_xfeatures2d -lopencv_ccalib
-
-
-g++ --std=c++11 -I/usr/local/include -I/opt/ros/kinetic/include -I/opt/ros/kinetic/include/opencv-3.3.1-dev -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"test_time.d" -MT"test_time.o" -o "test_time.o" "./test_time.cpp"
-g++ -L/usr/local/lib -L/opt/ros/kinetic/lib/aarch64-linux-gnu -o "opencv"  ./test_time.o   -lopencv_core3 -lopencv_highgui3 -lopencv_features2d3 -lopencv_flann3 -lopencv_imgproc3 -lopencv_calib3d3 -lopencv_imgcodecs3 -lopencv_videoio3 -lopencv_xfeatures2d3 -lopencv_ccalib3
-*/
-
-
+```
 #include <ctime>
 
 void f() {
@@ -121,6 +84,9 @@ void f() {
   clock_t end = clock();
   double elapsed_secs = double(end - begin) / CLOCKS_PER_SEC;
 }
+```
+
+```
 #include <iostream>
 #include <ctime>
 
@@ -144,6 +110,6 @@ int main() {
 }
 
 ===
-
 year month day hour min sec
+```
 
