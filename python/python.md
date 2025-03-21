@@ -4,7 +4,8 @@
 ```
 range(0,5): 0, 1, 2, 3, 4
 vec[r, c] = input[r][c] # np.array[,] = list[][]
-
+```
+```
 Ctrl-D or exit()
 ```
 
