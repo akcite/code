@@ -62,6 +62,8 @@ std::to_string(ros::Time::now().toSec()) + ".jpg"
 
 ### Convert from strings
 
+| functions | usage |
+| ------------- | --------------------------------------- |
 | stoi	| Convert string to integer (function template) | 
 | stol	| Convert string to long int (function template) | 
 | stoul	| Convert string to unsigned integer (function template) | 
