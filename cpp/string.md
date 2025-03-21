@@ -1,7 +1,7 @@
 ### std::string to number
 
 ```
-c++11
+// c++11
 
 int std::stoi( str )
 long std::stol(string)
