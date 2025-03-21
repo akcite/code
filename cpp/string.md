@@ -9,6 +9,9 @@ float std::stof(string)
 double std::stod(string)
 ```
 
+### char& operator[] (size_t pos)
+
+
 ### substr
 
 ```
@@ -62,7 +65,7 @@ std::to_string(ros::Time::now().toSec()) + ".jpg"
 
 ### Convert from strings
 
-| functions | usage |
+| function | usage |
 | ------------- | --------------------------------------- |
 | stoi	| Convert string to integer (function template) | 
 | stol	| Convert string to long int (function template) | 
