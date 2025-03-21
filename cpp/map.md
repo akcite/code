@@ -47,7 +47,7 @@ it=mymap.find ('e');
 mymap.erase ( it, mymap.end() );    // erasing by range
 ```
 
-### lower_bound upper_bound
+### lower_bound & upper_bound
 
 ```
 std::map<char,int>::iterator itlow,itup;
