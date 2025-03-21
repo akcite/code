@@ -299,6 +299,8 @@ print(alien_0['color'])
 print(alien_0['points'])
 
 # list[] tuple() dictionary{:,:} set{,}
+```
+```
 alien_0 = {}
 alien_0['color'] = 'green'
 alien_0['points'] = 5
@@ -309,8 +311,12 @@ alien_0['y_position'] = 25
 
 alien_0 = {'color': 'green'}
 alien_0['color'] = 'yellow'
+```
+```
 alien_0 = {'color': 'green', 'points': 5}
 del alien_0['points']
+```
+```
 user_0 = {
   'username': 'efermi',
   'first': 'enrico',
@@ -333,6 +339,8 @@ for name in sorted(favorite_languages.keys()):
 for language in favorite_languages.values():
 
 for language in set(favorite_languages.values()):
+```
+```
 favorite_languages = {
 'jen': 'python',
 'sarah': 'c',
@@ -347,16 +355,24 @@ for name in favorite_languages.keys():
     print(" Hi " + name.title() +
       ", I see your favorite language is " +
       favorite_languages[name].title() + "!")
+```
+```
 alien_0 = {'color': 'green', 'points': 5}
 alien_1 = {'color': 'yellow', 'points': 10}
 alien_2 = {'color': 'red', 'points': 15}
 aliens = [alien_0, alien_1, alien_2]
+```
+```
 for alien_number in range(30):
 # range(3) == [0, 1, 2]
+```
+```
 pizza = {
   'crust': 'thick',
   'toppings': ['mushrooms', 'extra cheese'],
 }
+```
+```
 users = {
   'aeinstein': {
     'first': 'albert',
@@ -378,28 +394,42 @@ message = input("I will repeat it back to you: ")
 print(message)
 
 # python3
+```
+```
 height = input("How tall are you, in inches? ")
 height = int(height)
+```
+```
 4 % 3
+```
+```
 current_number = 1
 while current_number <= 5:
   print(current_number)
   current_number += 1
+```
+```
 while message != 'quit':
   message = input(prompt)
   print(message)
+```
+```
 while True:
   city = input(prompt)
   if city == 'quit':
     break
   else:
     print("I'd love to go to " + city.title() + "!")
+```
+```
 current_number = 0
 while current_number < 10:
   current_number += 1
   if current_number % 2 == 0:
     continue
   print(current_number)
+```
+```
 unconfirmed_users = ['alice', 'brian', 'candace']
 confirmed_users = []
 
@@ -411,9 +441,13 @@ while unconfirmed_users:
 print("\nThe following users have been confirmed:")
 for confirmed_user in confirmed_users:
   print(confirmed_user.title())
+```
+```
 pets = ['dog', 'cat', 'dog', 'goldfish', 'cat', 'rabbit', 'cat']
 while 'cat' in pets:
   pets.remove('cat')
+```
+```
 responses = {}
 polling_active = True
 while polling_active:
@@ -436,18 +470,24 @@ def greet_user(username):
   print("Hello, " + username.title() + "!")
 
 greet_user('jesse')
+```
+```
 def describe_pet(animal_type, pet_name):
   """Display information about a pet."""
   print("\nI have a " + animal_type + ".")
   print("My " + animal_type + "'s name is " + pet_name.title() + ".")
 
 describe_pet('hamster', 'harry')
+```
+```
 def describe_pet(pet_name, animal_type='dog'):
   """Display information about a pet."""
   print("\nI have a " + animal_type + ".")
   print("My " + animal_type + "'s name is " + pet_name.title() + ".")
   
 describe_pet('willie')
+```
+```
 def get_formatted_name(first_name, last_name):
   """Return a full name, neatly formatted."""
   full_name = first_name + ' ' + last_name
@@ -455,7 +495,11 @@ def get_formatted_name(first_name, last_name):
 
 musician = get_formatted_name('jimi', 'hendrix')
 print(musician)
+```
+```
 def get_formatted_name(first_name, last_name, middle_name=''):
+```
+```
 def build_person(first_name, last_name, age=''):
   """Return a dictionary of information about a person."""
   person = {'first': first_name, 'last': last_name}
@@ -464,17 +508,25 @@ def build_person(first_name, last_name, age=''):
   return person
 musician = build_person('jimi', 'hendrix', 27)
 print(musician)
+```
+```
 print_models(unprinted_designs, completed_models)
 
 print_models(unprinted_designs[:], completed_models)
 # Preventing a Function from Modifying a List
+```
+```
 def make_pizza(*toppings):  # empty tuple
   """Print the list of toppings that have been requested."""
   print(toppings)
 
 make_pizza('pepperoni')
 make_pizza('mushrooms', 'green peppers', 'extra cheese')
+```
+```
 def build_profile(first, last, **user_info): # empty dictionary
+```
+```
 # pizza.py
 def make_pizza(size, *toppings):
 
@@ -523,28 +575,38 @@ my_dog = Dog('willie', 6)
 print("My dog's name is " + my_dog.name.title() + ".")
 print("My dog is " + str(my_dog.age) + " years old.")
 my_dog.sit()
+```
+```
 def __init__(self, make, model, year):
   """Initialize attributes to describe a car."""
   self.make = make
   self.model = model
   self.year = year
   self.odometer_reading = 0
+```
+```
 class Car():
 
 class ElectricCar(Car):
   def __init__(self, make, model, year):
     super().__init__(make, model, year)
     self.battery_size = 70
+```
+```
 class Car():
   def fill_gas_tank():
 
 class ElectricCar(Car):
   def fill_gas_tank():
+```
+```
 class Battery():
 
 class ElectricCar(Car)
   def __init__(self, make, model, year):
     self.battery = Battery()
+```
+```
 # car.py
 class Car():
 class Battery():
@@ -560,6 +622,8 @@ my_tesla = ElectricCar('tesla', 'roadster', 2016)
 import car
 my_beetle = car.Car('volkswagen', 'beetle', 2016)
 my_tesla = car.ElectricCar('tesla', 'roadster', 2016)
+```
+```
 # car.py
 class Car():
 
@@ -572,6 +636,8 @@ class ElectricCar(Car):
 # my_cars.py
 from car import Car
 from electric_car import ElectricCar
+```
+```
 from collections import OrderedDict
 
 favorite_languages = OrderedDict()
@@ -608,6 +674,8 @@ print(array[1][2])
 (4, 3)
 [[1, 2, 3, 4], [2, 3, 4, 5], [6, 7, 8, 9]]
 4
+```
+```
 filename = 'pi_digits.txt'
 
 ----
@@ -647,6 +715,8 @@ print(len(pi_string))
 
 birthday = input("Enter your birthday, in the form mmddyy: ")
 if birthday in pi_string:
+```
+```
 filename = 'programming.txt'  # r, a, w, x - t, b
 
 with open(filename, 'w') as file_object:
@@ -654,12 +724,16 @@ with open(filename, 'w') as file_object:
   file_object.write("I love creating new games.\n")
 
 with open(filename, 'a') as file_object:
+```
+```
 try:
   answer = int(first_number) / int(second_number)
 except ZeroDivisionError:
   print("You can't divide by 0!")
 else:
   print(answer)
+```
+```
 filename = 'alice.txt'
 
 try:
@@ -677,8 +751,12 @@ else:
 
 except FileNotFoundError:
   pass
+```
+```
 line = "Row, row, row your boat"
 line.count('row')
+```
+```
 import json
 
 numbers = [2, 3, 5, 7, 11, 13]
@@ -696,6 +774,8 @@ with open(filename) as file_object:
     numbers = json.load(file_object)
     
 print(numbers)
+```
+```
 fr = "YouTube.html"
 fw = "yt_list.txt"
 
@@ -705,6 +785,8 @@ with open(fr, 'r') as fo:
 	if 'rel="null" href="https://www.youtube.com/watch?v=' in line:
 	  with open(fw, 'a') as f1:
 		f1.write(line)
+```
+```
 import os
 os.remove("demofile.txt")
 
@@ -714,6 +796,8 @@ else:
   print("The file does not exist")
 
 os.rmdir("myfolder")
+```
+```
 f = open("demofile.txt", "r")
 print(f.read())
 
@@ -744,12 +828,16 @@ class NamesTestCase(unittest.TestCase):
     self.assertEqual(formatted_name, 'Wolfgang Amadeus Mozart')            
 
 unittest.main()
+```
+```
 assertEqual(a, b)       Verify that a == b
 assertNotEqual(a, b)    Verify that a != b
 assertTrue(x)           Verify that x is True
 assertFalse(x)          Verify that x is False
 assertIn(item, list)    Verify that item is in list
 assertNotIn(item, list) Verify that item is not in list
+```
+```
 import unittest
 from survey import AnonymousSurvey
 
@@ -778,13 +866,19 @@ class TestAnonymousSurvey(unittest.TestCase):
       self.assertIn(response, self.my_survey.responses)            
 
 unittest.main()
+```
 
-Snippet
+### Snippet
 
+```
 new_lines = []
 np.array(new_lines)
+```
+```
 import math
 math.sqrt(4)
+```
+```
 import os
 filename, file_extension = os.path.splitext('/path/somefile.ext')
 ```
