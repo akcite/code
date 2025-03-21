@@ -1,4 +1,4 @@
-### for colon
+### for colon (element_declaration)
 
 ```
 for (const auto& kv : myMap) {
