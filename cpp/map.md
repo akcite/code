@@ -37,6 +37,10 @@ mymap.insert ( std::pair<char,int>('a',100) );
 mymap.insert ( std::pair<char,int>('z',200) );
 ```
 
+```
+myMap.insert(std::make_pair("first_key" , "first_value"));
+```
+
 ### erase
 
 ```
