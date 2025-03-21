@@ -42,6 +42,8 @@ for (uint i = 0; i < v.size(); ++i) {
   }
 }
 
+// for colon
+
 for (auto i : v)
   cout << i << " ";
 cout << endl;
