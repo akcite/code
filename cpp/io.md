@@ -134,3 +134,10 @@ while (getline(ifs, line)) {
 ifs.close();
 ofs.close();
 ```
+
+### precision
+
+```
+kf_file << std::fixed << std::setprecision(16);
+```
+
