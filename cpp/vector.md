@@ -138,5 +138,7 @@ for (int i=1; i<=10; i++) myvector.push_back(i);
 myvector.erase (myvector.begin()+5);
 
 // erase the first 3 elements:
+// including the element pointed by first but not the one pointed by last.
+
 myvector.erase (myvector.begin(),myvector.begin()+3);
 ```
