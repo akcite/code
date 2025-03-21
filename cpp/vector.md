@@ -128,3 +128,15 @@ Output:
 myvector contains: 10 20 30
 myvector contains: 10 20 30
 ```
+
+### erase
+
+```
+for (int i=1; i<=10; i++) myvector.push_back(i);
+
+// erase the 6th element
+myvector.erase (myvector.begin()+5);
+
+// erase the first 3 elements:
+myvector.erase (myvector.begin(),myvector.begin()+3);
+```
