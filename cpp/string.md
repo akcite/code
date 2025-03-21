@@ -33,6 +33,43 @@ std::string(10, ‘ ‘);      // fill 10 spaces.
 input.substr(input.size() - n);
 ```
 
+### split filename
+
+```
+std::string file_name ="/home/alan/documents.txt";
+std::string::size_type slash_pos = file_name.find_last_of('/');
+std::string::size_type dot_pos = file_name.find('.');
+
+std::string dir_name = file_name.substr(0, slash_pos);
+std::string name_only = file_name.substr(slash_pos + 1);
+std::string extension = file_name.substr(dot_pos + 1, file_name.length() - dot_pos);
+    
+std::cout << dir_name << std::endl;
+std::cout << name_only << std::endl;
+std::cout << extension << std::endl;
+
+=============
+
+/home/alan/documents
+txt
+```
+
+### ROS time to std::string
+
+```
+std::to_string(ros::Time::now().toSec()) + ".jpg"
+```
+
+### Convert from strings
+
+| stoi	| Convert string to integer (function template) | 
+| stol	| Convert string to long int (function template) | 
+| stoul	| Convert string to unsigned integer (function template) | 
+| stoll	| Convert string to long long (function template) | 
+| stoull	| Convert string to unsigned long long (function template) | 
+| stof	| Convert string to float (function template) | 
+| stod	| Convert string to double (function template) | 
+| stold	| Convert string to long double (function template) | 
 
 
 
