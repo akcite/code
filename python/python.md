@@ -13,7 +13,11 @@ Ctrl-D or exit()
 
 ```
 print("Hello Python interpreter!")
+```
+```
 print("Hello world!")
+```
+```
 x-terminal-emulator -e /bin/sh %c
 # Try removing the quote marks
 ```
@@ -23,22 +27,40 @@ x-terminal-emulator -e /bin/sh %c
 ```
 message = "Hello Python Crash Course world!"
 print(message)
+```
+```
 name = "ada lovelace"
 print(name.title())
+```
+```
 name = "Ada Lovelace"
 print(name.upper())
 print(name.lower())
+```
+```
 print("\tPython")
+```
+```
 print("Languages:\n\tPython\n\tC\n\tJavaScript")
+```
+```
 double quotes would be best
+```
+```
 favorite_language = 'python '
 favorite_language.rstrip()
 favorite_language.lstrip()
 favorite_language.strip()
-
+```
+```
+3 / 2
 3 ** 2
+```
+```
 age = 23
 message = "Happy " + str(age) + "rd Birthday!"
+```
+```
 # Say hello to everyone.
 ```
 
@@ -47,8 +69,12 @@ message = "Happy " + str(age) + "rd Birthday!"
 ```
 bicycles = ['trek', 'cannondale', 'redline', 'specialized']
 print(bicycles[0].title())
+```
+```
 bicycles = ['trek', 'cannondale', 'redline', 'specialized']
 print(bicycles[-1])
+```
+```
 motorcycles = ['honda', 'yamaha', 'suzuki']
 motorcycles[0] = 'ducati'
 motorcycles.append('ducati')
@@ -57,6 +83,8 @@ motorcycles = []
 motorcycles = ['honda', 'yamaha', 'suzuki']
 motorcycles.insert(0, 'ducati')
 del motorcycles[0]
+```
+```
 x = [1, 2, 3]
 x.append([4, 5])
 [1, 2, 3, [4, 5]]
@@ -64,20 +92,30 @@ x.append([4, 5])
 x = [1, 2, 3]
 x.extend([4, 5])
 [1, 2, 3, 4, 5]
+```
+```
 motorcycles = ['honda', 'yamaha', 'suzuki']
 popped_motorcycle = motorcycles.pop()   # remove from end of list
 first_owned = motorcycles.pop(0)
+```
+```
 motorcycles = ['honda', 'yamaha', 'suzuki', 'ducati']
 print(motorcycles)
 motorcycles.remove('ducati')
 
 too_expensive = 'ducati'
 motorcycles.remove(too_expensive)
+```
+```
 cars = ['bmw', 'audi', 'toyota', 'subaru']
 cars.sort()
 cars.sort(reverse = True)
+```
+```
 cars = ['bmw', 'audi', 'toyota', 'subaru']
 print(sorted(cars))      # temporarily
+```
+```
 cars = ['bmw', 'audi', 'toyota', 'subaru']
 cars.reverse()
 
@@ -92,8 +130,12 @@ for magician in magicians:
   print(magician)
 
 # Always indent the line after the ‘for’ statement in a loop.
+```
+```
 IndentationError: unexpected indent
 Forgetting the Colon: SyntaxError: invalid syntax
+```
+```
 for value in range(1,5):
   print(value)
 1
@@ -101,19 +143,29 @@ for value in range(1,5):
 3
 4
 # off-by-one behavior
+```
+```
 numbers = list(range(1,6))
+```
+```
 even_numbers = list(range(2, 11, 2))
+```
+```
 squares = []
 for value in range(1,11):
   square = value**2
   squares.append(square)
 print(squares)
+```
+```
 digits = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0]
 print(min(digits))
 print(max(digits))
 print(sum(digits))
 squares = [value**2 for value in range(1,11)]
 print(squares)
+```
+```
 players = ['charles', 'martina', 'michael', 'florence', 'eli']
 print(players[0:3])  
 # 0, 1, 2
@@ -127,12 +179,18 @@ print(players[2:])
 
 print(players[-3:])
 # last three players
+```
+```
 players = ['charles', 'martina', 'michael', 'florence', 'eli']
 print("Here are the first three players on my team:")
 for player in players[:3]:
   print(player.title())
+```
+```
 my_foods = ['pizza', 'falafel', 'carrot cake']
 friend_foods = my_foods[:]         # create new data structure
+```
+```
 my_foods = ['pizza', 'falafel', 'carrot cake']
 # This doesn't work:
 friend_foods = my_foods
@@ -141,14 +199,22 @@ friend_foods.append('ice cream')
 
 # now both variables point to the same list
 # append twice
+```
+```
 dimensions = (200, 50)
 # tuple
+```
+```
 dimensions = (200, 50)
 dimensions[0] = 250
 TypeError: 'tuple' object does not support item assignment
+```
+```
 dimensions = (200, 50)
 for dimension in dimensions:
   print(dimension)
+```
+```
 dimensions = (200, 50)
 dimensions = (400, 100)
 # Writing over a Tuple
@@ -163,23 +229,37 @@ for car in cars:
     print(car.upper())
   else:
     print(car.title())
+```
+```
 car = 'Audi'
 car.lower() == 'audi'
+```
+```
 if requested_topping != 'anchovies':
   print("Hold the anchovies!")
 
 <, <=, >, >=
+```
+```
 age_0 >= 21 and age_1 >= 21
 (age_0 >= 21) and (age_1 >= 21)
 age_0 >= 21 or age_1 >= 21
+```
+```
 requested_toppings = ['mushrooms', 'onions', 'pineapple']
 'mushrooms' in requested_toppings
+```
+```
 banned_users = ['andrew', 'carolina', 'david']
 user = 'marie'
 if user not in banned_users:
   print(user.title() + ", you can post a response if you wish.")
+```
+```
 if conditional_test:
   do something
+```
+```
 age = 12
 if age < 4:
   print("Your admission cost is $0.")
@@ -187,6 +267,8 @@ elif age < 18:
   print("Your admission cost is $5.")
 else:
   print("Your admission cost is $10.")
+```
+```
 age = 12
 if age < 4:
   price = 0
@@ -197,9 +279,13 @@ elif age < 65:
 elif age >= 65:
   price = 5
 print("Your admission cost is $" + str(price) + ".")
+```
+```
 requested_toppings = ['mushrooms', 'extra cheese']
 if 'mushrooms' in requested_toppings:
   print("Adding mushrooms.")
+```
+```
 requested_toppings = ['mushrooms', 'green peppers', 'extra cheese']
 for requested_topping in requested_toppings:
   print("Adding " + requested_topping + ".")
