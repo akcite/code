@@ -12,7 +12,9 @@ double std::stod(string)
 ### number to string
 
 ```
-std::cout << "to_string:\t" << std::to_string(1.23456789555555) << revision() << '\n';
+for (const double f : {1.23456789555555, 23.43, 1e-9, 1e40, 1e-40, 123456789.0}) {
+  std::cout << "to_string:\t" << std::to_string(f) << revision() << '\n';
+}
 
 ===
 1.234568
