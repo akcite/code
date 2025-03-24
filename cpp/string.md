@@ -9,6 +9,15 @@ float std::stof(string)
 double std::stod(string)
 ```
 
+### number to string
+
+```
+std::cout << "to_string:\t" << std::to_string(1.23456789555555) << revision() << '\n';
+
+===
+1.234568
+```
+
 ### get character
 
 ```
