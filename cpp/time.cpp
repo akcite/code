@@ -1,8 +1,8 @@
-## Unix time
+/////////////////////////////////////////////////////////////////////////////////////
+// Unix time
 
 It measures time by the number of non-leap seconds that have elapsed since 00:00:00 UTC on 1 January 1970, the Unix **epoch**.
 
-```
 auto now = std::chrono::high_resolution_clock::now();
 auto now_nanosec = std::chrono::duration_cast<std::chrono::nanoseconds>(now.time_since_epoch());
 std::string current_time = std::to_string(now_nanosec.count());
@@ -16,17 +16,16 @@ std::cout << std::to_string(now_nanosec.count()) << std::endl;
 
 1626375435423866387
 1626375435423895344
-```
 
-## Duration
+/////////////////////////////////////////////////////////////////////////////////////
+// Duration
 
-```
 #include <iostream>
 #include <chrono>
 
 int main() {
     auto t1 = std::chrono::high_resolution_clock::now();
-    
+
     double d = 0.1;
     for (int i = 0; i < 10000000; ++i) {
       d = d * d;
@@ -34,23 +33,22 @@ int main() {
     auto t2 = std::chrono::high_resolution_clock::now();
     std::chrono::duration<double, std::milli> fp_ms = t2 - t1;
     std::chrono::duration<double, std::micro> fp_us = t2 - t1;
-    
+
     std::cout << "for took " << fp_ms.count() << " ms" << std::endl;
     std::cout << "for took " << fp_us.count() << " us" << std::endl;
 }
 
 ===
 
-g++ -std=c++11 chrono.cpp 
+g++ -std=c++11 chrono.cpp
 ./a.out
 
 for took 22.2169 ms
 for took 22216.9 us
-```
 
-## Date, HH:MM:SS
+/////////////////////////////////////////////////////////////////////////////////////
+// Date, HH:MM:SS
 
-```
 #include <iostream>
 #include <ctime>
 
@@ -60,7 +58,7 @@ int main() {
   char buffer[256];
   // Format: Mo, 15.06.2009 20:20:00
   std::strftime(buffer, sizeof(buffer), "%a, %d.%m.%Y %H:%M:%S", ptm);
-  
+
   std::cout << buffer << std::endl;
 
   return 0;
@@ -68,11 +66,10 @@ int main() {
 
 =====
 Thu, 01.07.2021 15:24:03
-```
 
-## ctime
+/////////////////////////////////////////////////////////////////////////////////////
+// ctime
 
-```
 #include <ctime>
 
 void f() {
@@ -84,9 +81,8 @@ void f() {
   clock_t end = clock();
   double elapsed_secs = double(end - begin) / CLOCKS_PER_SEC;
 }
-```
 
-```
+
 #include <iostream>
 #include <ctime>
 
@@ -111,5 +107,5 @@ int main() {
 
 ===
 year month day hour min sec
-```
 
+/////////////////////////////////////////////////////////////////////////////////////

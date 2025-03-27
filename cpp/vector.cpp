@@ -1,12 +1,11 @@
-## insert
+/////////////////////////////////////////////////////////////////////////////////////
+// insert
 
-```
 a_vector.insert(a_vector.end(), b_vector.begin(), b_vector.end());
-```
 
-## resize
+/////////////////////////////////////////////////////////////////////////////////////
+// resize
 
-```
 std::vector<int> myvector;
 
 // set some initial content:
@@ -17,20 +16,18 @@ myvector.resize(8, 100);
 myvector.resize(12);
 ===
 1 2 3 4 5 100 100 100 0 0 0 0
-```
 
-## initialize
+/////////////////////////////////////////////////////////////////////////////////////
+// initialize
 
-```
 // Create a vector of size n with all values as 10.
 vector<int> vect(n, 10);
 
 vector<int> vect{10, 20, 30};
-```
 
-## pop_back
+/////////////////////////////////////////////////////////////////////////////////////
+// pop_back
 
-```
 vector<int> v;
 for (int i = 0; i < 10; ++i)
   v.push_back(i);
@@ -42,6 +39,7 @@ for (uint i = 0; i < v.size(); ++i) {
   }
 }
 
+/////////////////////////////////////////////////////////////////////////////////////
 // for colon
 
 for (auto i : v)
@@ -50,11 +48,10 @@ cout << endl;
 
 ===
 0 1 9 3 4 5 6 7
-```
 
-## inheritance
+/////////////////////////////////////////////////////////////////////////////////////
+// inheritance
 
-```
 #include <iostream>
 #include <vector>
 
@@ -87,11 +84,10 @@ int main() {
 1
 10
 5
-```
 
-## for_each
+/////////////////////////////////////////////////////////////////////////////////////
+// for_each
 
-```
 #include <iostream>     // std::cout
 #include <algorithm>    // std::for_each
 #include <vector>       // std::vector
@@ -127,11 +123,10 @@ int main () {
 Output:
 myvector contains: 10 20 30
 myvector contains: 10 20 30
-```
 
-## erase
+/////////////////////////////////////////////////////////////////////////////////////
+// erase
 
-```
 for (int i=1; i<=10; i++) myvector.push_back(i);
 
 // erase the 6th element
@@ -141,4 +136,5 @@ myvector.erase (myvector.begin()+5);
 // including the element pointed by first but not the one pointed by last.
 
 myvector.erase (myvector.begin(),myvector.begin()+3);
-```
+
+/////////////////////////////////////////////////////////////////////////////////////

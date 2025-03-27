@@ -1,6 +1,6 @@
-## thread
+/////////////////////////////////////////////////////////////////////////////////////
+// thread
 
-```
 #include <iostream>
 #include <thread>
 
@@ -25,11 +25,10 @@ int main() {
 
   return 0;
 }
-```
 
-## mutex
+/////////////////////////////////////////////////////////////////////////////////////
+// mutex
 
-```
 #include <iostream>
 #include <thread>
 #include <mutex>
@@ -54,11 +53,10 @@ int main() {
 
   return 0;
 }
-```
 
-## atomic
+/////////////////////////////////////////////////////////////////////////////////////
+// atomic
 
-```
 #include <iostream>       // std::cout
 #include <atomic>         // std::atomic, std::atomic_flag, ATOMIC_FLAG_INIT
 #include <thread>         // std::thread, std::this_thread::yield
@@ -83,6 +81,5 @@ int main ()
 
   return 0;
 }
-```
 
-
+/////////////////////////////////////////////////////////////////////////////////////

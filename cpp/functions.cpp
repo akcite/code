@@ -1,6 +1,6 @@
-## GetFileNames
+/////////////////////////////////////////////////////////////////////////////////////
+// GetFileNames
 
-```
 void GetFileNames(std::string dir, std::vector<std::string>& file_list) {
   if (dir.back() != '/') {
     dir += "/";
@@ -21,13 +21,13 @@ void GetFileNames(std::string dir, std::vector<std::string>& file_list) {
   file_list.erase(file_list.begin()); //.
   file_list.erase(file_list.begin()); //..
 }
-```
 
-## Home directory
+/////////////////////////////////////////////////////////////////////////////////////
+// Home directory
 
-```
 #include <pwd.h>
 
 struct passwd *pw = getpwuid(getuid());
 std::cout << std::string(pw->pw_dir) << std::endl;
-```
+
+/////////////////////////////////////////////////////////////////////////////////////

@@ -1,6 +1,6 @@
-## fstream
+/////////////////////////////////////////////////////////////////////////////////////
+// fstream
 
-```
 // ifstream	Input file stream class (class)
 // ofstream	Output file stream (class)
 // fstream	Input/output file stream class (class)
@@ -23,24 +23,22 @@ int main() {
 
   std::cout << read_size << std::endl;
 }
-```
 
-## sprintf
+/////////////////////////////////////////////////////////////////////////////////////
+// sprintf
 
-```
 char buffer[50];
 int n, a=5, b=3;
 n = sprintf(buffer, "%d plus %d is %d", a, b, a+b);
-```
 
-## carriage return
-```
+/////////////////////////////////////////////////////////////////////////////////////
+// carriage return
+
 std::cout << "\r\e[K" << sd.id << ": " << sd.fps << " fps [" << sd.x << ", " << sd.y << ", " << sd.th << "]" << std::flush;
-```
 
-## printf color
+/////////////////////////////////////////////////////////////////////////////////////
+// printf color
 
-```
 #include <stdio.h>
 
 #define AC_RED     "\x1b[31m"
@@ -62,11 +60,10 @@ int main (int argc, char const *argv[]) {
 
   return 0;
 }
-```
 
-## setfill setw
+/////////////////////////////////////////////////////////////////////////////////////
+// setfill setw
 
-```
 #include <iostream>     // std::cout, std::endl
 #include <iomanip>      // std::setfill, std::setw
 #include <string>
@@ -87,14 +84,13 @@ int main () {
 =====
 xxxxxxxx77
 000088.png
-```
 
-## getline
+/////////////////////////////////////////////////////////////////////////////////////
+// getline
 
-```
 std::string sn[3]  = {"-", "0", "1"};
 for (int i = 0; i < 3; ++i) {
-  
+
 std::string folder = "/home/alan/data/mynt/200225/";
 
 std::string vo_sn = folder + "vo"   + sn[i];
@@ -114,11 +110,11 @@ ofs.open((tf_sn + ".dat").c_str());
 
 if (!getline(ifs, line))
   return;
-  
+
 while (getline(ifs, line)) {
   std::stringstream lstr(line);
   std::string       value;
-  
+
   int count = 1;
   while (getline(lstr, value, ',')) {
     if (count == 6)
@@ -139,17 +135,17 @@ while (getline(ifs, line)) {
     if (++count > 12)
       break;
   }
-  
+
   ofs << fx << "\t" << fy << std::endl;
 }
 
 ifs.close();
 ofs.close();
-```
 
-## precision
+/////////////////////////////////////////////////////////////////////////////////////
+// precision
 
-```
 kf_file << std::fixed << std::setprecision(16);
-```
+
+/////////////////////////////////////////////////////////////////////////////////////
 

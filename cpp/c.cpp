@@ -1,12 +1,11 @@
-## SIGSEGV
+/////////////////////////////////////////////////////////////////////////////////////
+// SIGSEGV
 
-```
 #include <stdio.h>
 #include <execinfo.h>
 #include <signal.h>
 #include <stdlib.h>
 #include <unistd.h>
-
 
 void handler(int sig) {
   void *array[10];
@@ -29,19 +28,19 @@ void baz() {
 void bar() { baz(); }
 void foo() { bar(); }
 
-
 int main(int argc, char **argv) {
   signal(SIGSEGV, handler);   // install our handler
   foo(); // this will call foo, bar, and baz.  baz segfaults.
 }
 
+/*
 $ gcc -g -rdynamic ./test.c -o test
-```
+*/
 
-## compile
+/////////////////////////////////////////////////////////////////////////////////////
+// compile
 
-```
-vi hello.cpp
+// vi hello.cpp
 
 #include <iostream>
 int main () {
@@ -49,19 +48,21 @@ int main () {
   return 0;
 }
 
+/*
 :wq
 
 g++ hello.cpp
 ./a.out
 
 -std=c++11
-```
 
-```
-combine .o object files 
-$ ld -r a.o b.o -o c.o 
-$ gcc c.o other.o -o executable 
+combine .o object files
+$ ld -r a.o b.o -o c.o
+$ gcc c.o other.o -o executable
 $ ./executable
 
 https://stackoverflow.com/questions/2980102/combine-two-gcc-compiled-o-object-files-into-a-third-o-file
-```
+
+*/
+
+/////////////////////////////////////////////////////////////////////////////////////
