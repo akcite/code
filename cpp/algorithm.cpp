@@ -1,6 +1,6 @@
+/////////////////////////////////////////////////////////////////////////////////////
 // functor & transform
 
-```
 #include <cassert>
 #include <vector>
 #include <algorithm>
@@ -35,11 +35,10 @@ int main() {
 
   return 0;
 }
-```
 
+/////////////////////////////////////////////////////////////////////////////////////
 // nth_element
 
-```
 bool myfunction(int i, int j) {
   return (i < j);
 }
@@ -68,10 +67,10 @@ int main() {
 
 ===
 4th element is like sorted order.
-```
+
+/////////////////////////////////////////////////////////////////////////////////////
 // for_each
 
-```
 void myfunction (int i) {  // function:
   std::cout << ' ' << i;
 }
@@ -97,11 +96,10 @@ int main () {
 
   return 0;
 }
-```
 
+/////////////////////////////////////////////////////////////////////////////////////
 // rotate
 
-```
 int main() {
   std::vector<int> myvector;
 
@@ -120,11 +118,10 @@ int main() {
 
   return 0;
 }
-```
 
+/////////////////////////////////////////////////////////////////////////////////////
 // random_shuffle
 
-```
 #include <iostream>     // std::cout
 #include <algorithm>    // std::random_shuffle
 #include <vector>       // std::vector
@@ -156,5 +153,6 @@ int main () {
 
   return 0;
 }
-```
+
+/////////////////////////////////////////////////////////////////////////////////////
 
