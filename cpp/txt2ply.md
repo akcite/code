@@ -1,4 +1,4 @@
-### txt2ply
+## txt2ply
 
 ```
 #include <stdio.h>
