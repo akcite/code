@@ -1,4 +1,4 @@
-### std::string to number
+## std::string to number
 
 ```
 // c++11
@@ -9,7 +9,7 @@ float std::stof(string)
 double std::stod(string)
 ```
 
-### number to string
+## number to string
 
 ```
 for (const double f : {1.23456789555555, 23.43, 1e-9, 1e40, 1e-40, 123456789.0}) {
@@ -20,7 +20,7 @@ for (const double f : {1.23456789555555, 23.43, 1e-9, 1e40, 1e-40, 123456789.0})
 1.234568
 ```
 
-### get character
+## get character
 
 ```
 // char& operator[] (size_t pos)
@@ -37,7 +37,7 @@ std::cout << str.at(0);
 // char& back();
 ```
 
-### substr
+## substr
 
 ```
 string str("/usr/bin/test.txt");
@@ -50,7 +50,7 @@ path: /usr/bin
 file: test.txt
 ```
 
-### fill
+## fill
 
 ```
 std::string(10, ‘ ‘);      // fill 10 spaces.
@@ -61,7 +61,7 @@ std::string(10, ‘ ‘);      // fill 10 spaces.
 input.substr(input.size() - n);
 ```
 
-### split filename
+## split filename
 
 ```
 std::string file_name ="/home/alan/documents.txt";
@@ -82,13 +82,13 @@ std::cout << extension << std::endl;
 txt
 ```
 
-### ROS time to std::string
+## ROS time to std::string
 
 ```
 std::to_string(ros::Time::now().toSec()) + ".jpg"
 ```
 
-### Convert from strings
+## Convert from strings
 
 | function | usage |
 | ------------- | --------------------------------------- |
