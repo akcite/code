@@ -98,3 +98,27 @@ int main () {
   return 0;
 }
 ```
+
+### rotate
+
+```
+int main() {
+  std::vector<int> myvector;
+
+  for (int i = 1; i < 10; ++i) {
+    myvector.push_back(i);
+  }
+
+  std::rotate(myvector.begin(), myvector.begin() + 3, myvector.end());
+
+  std::cout << "myvector contains:";
+  for (std::vector<int>::iterator it = myvector.begin(); it != myvector.end(); ++it) {
+    std::cout << ' ' << *it;
+  }
+
+  std::cout << '\n';
+
+  return 0;
+}
+```
+
