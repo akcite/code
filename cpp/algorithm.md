@@ -37,3 +37,32 @@ int main() {
 }
 ```
 
+### nth_element
+
+```
+bool myfunction(int i, int j) {
+  return (i < j);
+}
+
+int main() {
+  std::vector<int> myvector;
+
+  for (int i = 1; i < 10; ++i) {
+    myvector.push_back(i);
+  }
+
+  std::random_shuffle(myvector.begin(), myvector.end());
+
+  std::nth_element(myvector.begin(), myvector.begin() + 4, myvector.end());
+  std::nth_element( myvector.begin(), myvector.begin() + 4, myvector.end(), myfunction);
+
+  std::cout << "myvector contains:";
+  for (std::vector<int>::iterator it = myvector.begin(); it != myvector.end(); ++it) {
+    std::cout << ' ' << *it;
+  }
+
+  std::cout << '\n';
+
+  return 0;
+}
+```
