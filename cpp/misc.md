@@ -1,3 +1,32 @@
+### template
+
+```
+#include <iostream>
+
+template <typename T>
+class TClass {
+  public:
+  TClass(T value) : data(value) {}
+
+  T getData() const {
+    return data;
+  }
+
+  private:
+  T data;
+};
+
+int main() {
+  TClass<int> intObject(10);
+  TClass<std::string> stringObject("Hello");
+
+  std::cout << intObject.getData() << std::endl;
+  std::cout << stringObject.getData() << std::endl;
+
+  return 0;
+}
+```
+
 ### regex
 
 ```
