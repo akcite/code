@@ -1,4 +1,4 @@
-### template
+## template
 
 ```
 #include <iostream>
@@ -27,7 +27,7 @@ int main() {
 }
 ```
 
-### regex
+## regex
 
 ```
 char regex_filename[] = “[a-zA-Z_] [a-zA-Z_0-9]*\\.[a-zA-Z0-9]+”;
@@ -37,13 +37,13 @@ char regex_filename[] = “[a-zA-Z_] [a-zA-Z_0-9]*\\.[a-zA-Z0-9]+”;
 [a-zA-Z0-9]+  : one or more characters, in which each may be a letter or digit
 ```
 
-### hypot
+## hypot
 
 ```
 c = hypot(a, b);  // h = √(a^2+b^2)
 ```
 
-### const
+## const
 
 | variables | notes |
 | -------------------------- | -------------------------------------- |
@@ -55,7 +55,7 @@ c = hypot(a, b);  // h = √(a^2+b^2)
 | const char *Function1() | return value is unalterable |
 
 
-### square root
+## square root
 
 ```
 sqrt(x*x+y*y) → hypot(x,y)
@@ -65,7 +65,7 @@ x≤sqrt(y) → x*x≤y or x≤y/x
 sqrt(x*x+y*y+z*z) → hypot(x,hypot(y,z))
 ```
 
-### enum
+## enum
 
 ```
 enum Days {Saturday, Sunday, Tuesday, Wednesday, Thursday, Friday};
@@ -85,7 +85,7 @@ enum class Days {
 if (day == Days::SUNDAY)
 ```
 
-### tuple
+## tuple
 
 ```
 #include <iostream>
@@ -110,7 +110,7 @@ int main() {
 }
 ```
 
-### stringstream
+## stringstream
 
 ```
 #include <string>
