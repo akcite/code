@@ -65,8 +65,8 @@ int main() {
   return 0;
 }
 
-===
-4th element is like sorted order.
+// ===
+// 4th element is like sorted order.
 
 /////////////////////////////////////////////////////////////////////////////////////
 // for_each
