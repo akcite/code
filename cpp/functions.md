@@ -1,4 +1,4 @@
-### GetFileNames
+## GetFileNames
 
 ```
 void GetFileNames(std::string dir, std::vector<std::string>& file_list) {
@@ -23,7 +23,7 @@ void GetFileNames(std::string dir, std::vector<std::string>& file_list) {
 }
 ```
 
-### Home directory
+## Home directory
 
 ```
 #include <pwd.h>
