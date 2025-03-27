@@ -1,4 +1,4 @@
-### for colon (element_declaration)
+## for colon (element_declaration)
 
 ```
 for (const auto& kv : myMap) {
@@ -6,7 +6,7 @@ for (const auto& kv : myMap) {
 }
 ```
 
-### Iterator
+## Iterator
 
 ```
 std::map<char,int> mymap;
@@ -21,7 +21,7 @@ for (std::map<char,int>::iterator it=mymap.begin(); it!=mymap.end(); ++it) {
 }
 ```
 
-### add value
+## add value
 ```
 std::map<char,int> mymap;
 
@@ -41,7 +41,7 @@ mymap.insert(std::pair<char,int>('z',200));
 myMap.insert(std::make_pair("first_key" , "first_value"));
 ```
 
-### erase
+## erase
 
 ```
 it=mymap.find('b');
@@ -53,7 +53,7 @@ it=mymap.find ('e');
 mymap.erase ( it, mymap.end() );    // erasing by range
 ```
 
-### lower_bound & upper_bound
+## lower_bound & upper_bound
 
 ```
 std::map<char,int>::iterator itlow,itup;
