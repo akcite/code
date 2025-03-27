@@ -1,4 +1,4 @@
-### Unix time
+## Unix time
 
 It measures time by the number of non-leap seconds that have elapsed since 00:00:00 UTC on 1 January 1970, the Unix **epoch**.
 
@@ -18,7 +18,7 @@ std::cout << std::to_string(now_nanosec.count()) << std::endl;
 1626375435423895344
 ```
 
-### Duration
+## Duration
 
 ```
 #include <iostream>
@@ -48,7 +48,7 @@ for took 22.2169 ms
 for took 22216.9 us
 ```
 
-### Date, HH:MM:SS
+## Date, HH:MM:SS
 
 ```
 #include <iostream>
@@ -70,7 +70,7 @@ int main() {
 Thu, 01.07.2021 15:24:03
 ```
 
-### ctime
+## ctime
 
 ```
 #include <ctime>
