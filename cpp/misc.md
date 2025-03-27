@@ -3,7 +3,7 @@
 ```
 #include <iostream>
 
-template <typename T>
+template <typename T>  // typename -> class, no difference
 class TClass {
   public:
   TClass(T value) : data(value) {}
