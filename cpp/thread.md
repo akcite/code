@@ -1,14 +1,60 @@
 ### thread
 
 ```
+#include <iostream>
 #include <thread>
 
-thread* thr = new thread[param->pyr_levels];
-for (int l = 0; l < param->pyr_levels; ++l)
-  thr[l] = std::thread(&ImageProcess::Process, ip, l, frame);
+void foo() {
 
-for (int l = 0; l < param->pyr_levels; ++l)
-  thr[l].join();
+}
 
-delete[] thr;
+void bar(int x) {
+
+}
+
+int main() {
+  std::thread first(foo);
+  std::thread second(bar, 0);
+
+  std::cout << "main, foo and bar now execute concurrently..." << std::endl;
+
+  first.join();
+  second.join();
+
+  std::cout << "foo and bar completed." << std::endl;
+
+  return 0;
+}
 ```
+
+### mutex
+
+```
+#include <iostream>
+#include <thread>
+#include <mutex>
+
+std::mutex mtx;
+
+void print_block(int n, char c) {
+  // std::unique_lock<std::mutex> lck(mtx);
+  for (int i = 0; i < n; ++i) {
+    std::cout << c;
+  }
+
+  std::cout << std::endl;
+}
+
+int main() {
+  std::thread th1(print_block, 50, '*');
+  std::thread th2(print_block, 50, '$');
+
+  th1.join();
+  th2.join();
+
+  return 0;
+}
+```
+
+
+
