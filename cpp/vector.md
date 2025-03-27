@@ -1,10 +1,10 @@
-### insert
+## insert
 
 ```
 a_vector.insert(a_vector.end(), b_vector.begin(), b_vector.end());
 ```
 
-### resize
+## resize
 
 ```
 std::vector<int> myvector;
@@ -19,7 +19,7 @@ myvector.resize(12);
 1 2 3 4 5 100 100 100 0 0 0 0
 ```
 
-### initialize
+## initialize
 
 ```
 // Create a vector of size n with all values as 10.
@@ -28,7 +28,7 @@ vector<int> vect(n, 10);
 vector<int> vect{10, 20, 30};
 ```
 
-### pop_back
+## pop_back
 
 ```
 vector<int> v;
@@ -52,7 +52,7 @@ cout << endl;
 0 1 9 3 4 5 6 7
 ```
 
-### inheritance
+## inheritance
 
 ```
 #include <iostream>
@@ -89,7 +89,7 @@ int main() {
 5
 ```
 
-### for_each
+## for_each
 
 ```
 #include <iostream>     // std::cout
@@ -129,7 +129,7 @@ myvector contains: 10 20 30
 myvector contains: 10 20 30
 ```
 
-### erase
+## erase
 
 ```
 for (int i=1; i<=10; i++) myvector.push_back(i);
