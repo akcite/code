@@ -1,4 +1,4 @@
-### functor transform
+### functor & transform
 
 ```
 #include <cassert>
