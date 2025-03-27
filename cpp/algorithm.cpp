@@ -1,4 +1,4 @@
-## functor & transform
+// functor & transform
 
 ```
 #include <cassert>
@@ -37,7 +37,7 @@ int main() {
 }
 ```
 
-## nth_element
+// nth_element
 
 ```
 bool myfunction(int i, int j) {
@@ -69,7 +69,7 @@ int main() {
 ===
 4th element is like sorted order.
 ```
-## for_each
+// for_each
 
 ```
 void myfunction (int i) {  // function:
@@ -99,7 +99,7 @@ int main () {
 }
 ```
 
-## rotate
+// rotate
 
 ```
 int main() {
@@ -122,7 +122,7 @@ int main() {
 }
 ```
 
-## random_shuffle
+// random_shuffle
 
 ```
 #include <iostream>     // std::cout
