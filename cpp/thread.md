@@ -1,4 +1,4 @@
-### thread
+## thread
 
 ```
 #include <iostream>
@@ -27,7 +27,7 @@ int main() {
 }
 ```
 
-### mutex
+## mutex
 
 ```
 #include <iostream>
@@ -56,7 +56,7 @@ int main() {
 }
 ```
 
-### atomic
+## atomic
 
 ```
 #include <iostream>       // std::cout
