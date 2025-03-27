@@ -1,4 +1,4 @@
-### fstream
+## fstream
 
 ```
 // ifstream	Input file stream class (class)
@@ -25,7 +25,7 @@ int main() {
 }
 ```
 
-### sprintf
+## sprintf
 
 ```
 char buffer[50];
@@ -33,12 +33,12 @@ int n, a=5, b=3;
 n = sprintf(buffer, "%d plus %d is %d", a, b, a+b);
 ```
 
-### carriage return
+## carriage return
 ```
 std::cout << "\r\e[K" << sd.id << ": " << sd.fps << " fps [" << sd.x << ", " << sd.y << ", " << sd.th << "]" << std::flush;
 ```
 
-### printf color
+## printf color
 
 ```
 #include <stdio.h>
@@ -64,7 +64,7 @@ int main (int argc, char const *argv[]) {
 }
 ```
 
-### setfill setw
+## setfill setw
 
 ```
 #include <iostream>     // std::cout, std::endl
@@ -89,7 +89,7 @@ xxxxxxxx77
 000088.png
 ```
 
-### getline
+## getline
 
 ```
 std::string sn[3]  = {"-", "0", "1"};
@@ -147,7 +147,7 @@ ifs.close();
 ofs.close();
 ```
 
-### precision
+## precision
 
 ```
 kf_file << std::fixed << std::setprecision(16);
