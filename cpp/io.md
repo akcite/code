@@ -1,16 +1,28 @@
 ### fstream
 
 ```
-ofstream ofile;
-ofile.open("test.txt", std::ofstream::out | std::ofstream::app);
-ofile << size << endl;                              // append
-ofile.close();
+// ifstream	Input file stream class (class)
+// ofstream	Output file stream (class)
+// fstream	Input/output file stream class (class)
 
-ifstream ifile;
-ifile.open((str + "kf_map.txt").c_str(), ifstream::in);
-int kf_size;
-ifile >> kf_size;
-ifile.close();
+#include <iostream>
+#include <fstream>
+
+int main() {
+  int write_size = 100;
+  std::ofstream ofile;
+  ofile.open("test.txt", std::ostream::out | std::ofstream::app);
+  ofile << write_size << std::endl;
+  ofile.close();
+
+  std::ifstream ifile;
+  ifile.open("test.txt", std::ifstream::in);
+  int read_size;
+  ifile >> read_size;
+  ifile.close();
+
+  std::cout << read_size << std::endl;
+}
 ```
 
 ### sprintf
