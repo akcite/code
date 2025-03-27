@@ -37,7 +37,7 @@ int main() {
 std::mutex mtx;
 
 void print_block(int n, char c) {
-  // std::unique_lock<std::mutex> lck(mtx);
+  std::unique_lock<std::mutex> lck(mtx);
   for (int i = 0; i < n; ++i) {
     std::cout << c;
   }
