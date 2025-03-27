@@ -11,7 +11,7 @@
 int main() {
   int write_size = 100;
   std::ofstream ofile;
-  ofile.open("test.txt", std::ostream::out | std::ofstream::app);
+  ofile.open("test.txt", std::ostream::out | std::ofstream::app);  // const char* filename
   ofile << write_size << std::endl;
   ofile.close();
 
