@@ -126,3 +126,10 @@ int main() {
 }
 ```
 
+```
+  ss << "Example string";
+  ss << " " << 100;
+  std::cout << ss.str() << std::endl;
+```
+
+
