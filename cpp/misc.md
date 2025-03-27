@@ -110,4 +110,19 @@ int main() {
 }
 ```
 
+## stringstream
+
+```
+#include <string>
+#include <iostream>
+#include <sstream>
+
+int main() {
+  std::stringstream ss;
+  ss.str("Example string");
+  std::string s = ss.str();
+  std::cout << s << std::endl;
+  return 0;
+}
+```
 
