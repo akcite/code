@@ -1,5 +1,5 @@
 
-### Quick
+## Quick
 
 ```
 range(0,5): 0, 1, 2, 3, 4
@@ -9,7 +9,7 @@ vec[r, c] = input[r][c] # np.array[,] = list[][]
 Ctrl-D or exit()
 ```
 
-### Chapter 1: Getting Started
+## Chapter 1: Getting Started
 
 ```
 print("Hello Python interpreter!")
@@ -22,7 +22,7 @@ x-terminal-emulator -e /bin/sh %c
 # Try removing the quote marks
 ```
 
-### Chapter 2: Variables and Simple Data Types
+## Chapter 2: Variables and Simple Data Types
 
 ```
 message = "Hello Python Crash Course world!"
@@ -64,7 +64,7 @@ message = "Happy " + str(age) + "rd Birthday!"
 # Say hello to everyone.
 ```
 
-### Chapter 3: Introducing Lists
+## Chapter 3: Introducing Lists
 
 ```
 bicycles = ['trek', 'cannondale', 'redline', 'specialized']
@@ -122,7 +122,7 @@ cars.reverse()
 len(cars)
 ```
 
-### Chapter 4: Working with Lists
+## Chapter 4: Working with Lists
 
 ```
 magicians = ['alice', 'david', 'carolina']
@@ -220,7 +220,7 @@ dimensions = (400, 100)
 # Writing over a Tuple
 ```
 
-### Chapter 5: if Statements
+## Chapter 5: if Statements
 
 ```
 cars = ['audi', 'bmw', 'subaru', 'toyota']
@@ -291,7 +291,7 @@ for requested_topping in requested_toppings:
   print("Adding " + requested_topping + ".")
 ```
 
-### Chapter 6: Dictionaries
+## Chapter 6: Dictionaries
 
 ```
 alien_0 = {'color': 'green', 'points': 5}
@@ -387,7 +387,7 @@ users = {
 }
 ```
 
-### Chapter 7: User Input and while Loops
+## Chapter 7: User Input and while Loops
 
 ```
 message = input("I will repeat it back to you: ")
@@ -462,7 +462,7 @@ for name, response in responses.items():
   print(name + " would like to climb " + response + ".")
 ```
 
-### Chapter 8: Functions
+## Chapter 8: Functions
 
 ```
 def greet_user(username):
@@ -550,7 +550,7 @@ p.make_pizza(12, 'mushrooms', 'green peppers', 'extra cheese')
 from pizza import *
 ```
 
-### Chapter 9: Classes
+## Chapter 9: Classes
 
 ```
 class Dog():
@@ -645,7 +645,7 @@ favorite_languages = OrderedDict()
 # always get responses back in the order they were added
 ```
 
-### Chapter 10: Files and Exceptions
+## Chapter 10: Files and Exceptions
 
 ```
 file
@@ -809,7 +809,7 @@ print(f.readline())
 f.close()
 ```
 
-### Chapter 11: Testing Your Code
+## Chapter 11: Testing Your Code
 
 ```
 import unittest
@@ -868,7 +868,7 @@ class TestAnonymousSurvey(unittest.TestCase):
 unittest.main()
 ```
 
-### Snippet
+## Snippet
 
 ```
 new_lines = []
@@ -883,7 +883,7 @@ import os
 filename, file_extension = os.path.splitext('/path/somefile.ext')
 ```
 
-### ()[]{}
+## ()[]{}
 
 ```
 >>> int()
