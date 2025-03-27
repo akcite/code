@@ -1,4 +1,4 @@
-### SIGSEGV
+## SIGSEGV
 
 ```
 #include <stdio.h>
@@ -38,7 +38,7 @@ int main(int argc, char **argv) {
 $ gcc -g -rdynamic ./test.c -o test
 ```
 
-### compile
+## compile
 
 ```
 vi hello.cpp
