@@ -1,6 +1,5 @@
-## CMakeLists.txt
 
-### simple
+## simple
 
 ```
 cmake_minimum_required(VERSION 2.8...3.13)
@@ -11,7 +10,7 @@ SET(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -pthread")
 add_executable(map_test src/map_test.cpp)
 ```
 
-### C++11
+## C++11
 
 ```
 cmake_minimum_required(VERSION 3.10)
