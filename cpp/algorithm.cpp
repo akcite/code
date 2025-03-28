@@ -39,6 +39,10 @@ int main() {
 /////////////////////////////////////////////////////////////////////////////////////
 // nth_element
 
+#include <iostream>
+#include <vector>
+#include <algorithm>
+
 bool myfunction(int i, int j) {
   return (i < j);
 }
@@ -71,6 +75,10 @@ int main() {
 /////////////////////////////////////////////////////////////////////////////////////
 // for_each
 
+#include <iostream>
+#include <vector>
+#include <algorithm>
+
 void myfunction (int i) {  // function:
   std::cout << ' ' << i;
 }
@@ -99,6 +107,10 @@ int main () {
 
 /////////////////////////////////////////////////////////////////////////////////////
 // rotate
+
+#include <iostream>
+#include <vector>
+#include <algorithm>
 
 int main() {
   std::vector<int> myvector;
