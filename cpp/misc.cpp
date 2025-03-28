@@ -185,3 +185,25 @@ int main() {
 }
 
 /////////////////////////////////////////////////////////////////////////////////////
+// lvalue & rvalue
+
+#include <iostream>
+
+void foo(int& a) {
+  std::cout << "Here" << std::endl;
+}
+
+void foo(int&& a) {
+  std::cout << "There" << std::endl;
+}
+
+int main() {
+  int a = 10;
+
+  foo(a);
+  foo(10);
+
+  return 0;
+}
+
+/////////////////////////////////////////////////////////////////////////////////////
