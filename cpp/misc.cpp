@@ -123,3 +123,65 @@ int main() {
   std::cout << ss.str() << std::endl;
 
 /////////////////////////////////////////////////////////////////////////////////////
+// overloading
+
+#include <iostream>
+
+class Calculator {
+  public:
+  int add(int a, int b) {
+    return a + b;
+  }
+
+  double add(double a, double b) {
+    return a + b;
+  }
+
+  int add(int a, int b, int c) {
+    return a + b + c;
+  }
+};
+
+int main() {
+  Calculator calc;
+  int sum1 = calc.add(2, 3);
+  double sum2 = calc.add(2.5, 3.5);
+  int sum3 = calc.add(1, 2, 3);
+
+  std::cout << sum1 << " " << sum2 << " " << sum3 << std::endl;
+  return 0;
+}
+
+/////////////////////////////////////////////////////////////////////////////////////
+// overriding
+
+#include <iostream>
+
+class Animal {
+  public:
+  virtual void makeSound() {
+    std::cout << "Generic animal sound" << std::endl;
+  }
+};
+
+class Dog : public Animal {
+  public:
+  void makeSound() override {
+    std::cout << "Woof!" << std::endl;
+  }
+};
+
+int main() {
+  Animal* animal1 = new Animal();
+  Animal* animal2 = new Dog();
+
+  animal1->makeSound();
+  animal2->makeSound();
+
+  delete animal1;
+  delete animal2;
+
+  return 0;
+}
+
+/////////////////////////////////////////////////////////////////////////////////////
