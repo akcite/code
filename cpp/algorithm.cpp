@@ -218,6 +218,8 @@ int main() {
   int myints[] = {10, 20, 20, 20, 30, 30, 20, 20, 10};
   std::vector<int> myvector(myints, myints + 9);
 
+  std::sort(myvector.begin(), myvector.end());
+
   std::vector<int>::iterator it;
   it = std::unique(myvector.begin(), myvector.end());
 
@@ -234,7 +236,7 @@ int main() {
   return 0;
 }
 
-// 10 20 30 20 10
+// 10 20 30 
 
 /////////////////////////////////////////////////////////////////////////////////////
 
