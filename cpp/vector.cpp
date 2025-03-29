@@ -23,7 +23,12 @@ myvector.resize(12);
 // Create a vector of size n with all values as 10.
 vector<int> vect(n, 10);
 
+// 1-step
 vector<int> vect{10, 20, 30};
+
+// 2-step
+vector<long long> S;
+S = std::vector<long long>({2, 6});
 
 /////////////////////////////////////////////////////////////////////////////////////
 // pop_back
