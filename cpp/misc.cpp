@@ -207,3 +207,26 @@ int main() {
 }
 
 /////////////////////////////////////////////////////////////////////////////////////
+// for loop early end
+
+#include <iostream>
+
+int main() {
+  int X = 10;
+  int Y = 10;
+  for (int x = 0; x < X; ++x) {
+    for (int y = 0; y <= x; ++y) {
+      std::cout << y;
+
+      if (y == 6) {
+        std::cout << std::endl;
+        std::cout << "Stop here" << std::endl;
+        x = X;
+        y = Y;
+      }
+    }
+    std::cout << std::endl;
+  }
+}
+
+/////////////////////////////////////////////////////////////////////////////////////
