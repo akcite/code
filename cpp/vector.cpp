@@ -30,6 +30,10 @@ vector<int> vect{10, 20, 30};
 vector<long long> S;
 S = std::vector<long long>({2, 6});
 
+// nested
+std::vector<std::vector<int>> vecs;
+vecs = std::vector<std::vector<int>>({{1, 1, 0, 1}, {0, 0, 1, 0}, {1, 0, 1, 0}, {0, 1, 0, 1}});
+
 /////////////////////////////////////////////////////////////////////////////////////
 // pop_back
 
