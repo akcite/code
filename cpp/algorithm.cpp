@@ -239,4 +239,26 @@ int main() {
 // 10 20 30 
 
 /////////////////////////////////////////////////////////////////////////////////////
+// std::find
+
+#include <iostream>
+#include <vector>
+#include <algorithm>
+
+int main() {
+    std::vector<int> numbers = {10, 20, 30, 40, 50};
+    int target = 30;
+
+    auto it = std::find(numbers.begin(), numbers.end(), target);
+
+    if (it != numbers.end()) {
+        std::cout << "Element found: " << *it << std::endl;
+    } else {
+        std::cout << "Element not found." << std::endl;
+    }
+
+    return 0;
+}
+
+/////////////////////////////////////////////////////////////////////////////////////
 
